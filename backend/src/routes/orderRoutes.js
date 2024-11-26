@@ -4,7 +4,7 @@ import orderService from '../services/orderService.js';
 
 const router = express.Router();
 
-// Criar pedido
+// Serve para criar os pedidos
 router.post('/', authenticateToken, async (req, res, next) => {
      try {
           const order = await orderService.createOrder(req.user.id, req.body);
@@ -14,7 +14,7 @@ router.post('/', authenticateToken, async (req, res, next) => {
      }
 });
 
-// Listar pedidos do usuário
+// Serve para listar os pedidos do usuário
 router.get('/', authenticateToken, async (req, res, next) => {
      try {
           const orders = await orderService.getUserOrders(req.user.id);
@@ -24,7 +24,7 @@ router.get('/', authenticateToken, async (req, res, next) => {
      }
 });
 
-// Obter pedido específico
+// Serve para obter pedido específico
 router.get('/:orderId', authenticateToken, async (req, res, next) => {
      try {
           const order = await orderService.getOrderById(req.params.orderId, req.user.id);

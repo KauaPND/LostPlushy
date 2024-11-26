@@ -16,6 +16,7 @@ const ProductPage = () => {
         setLoading(true);
         const response = await api.get('/products');
         setProducts(response.data);
+        console.log(response.data)
       } catch (error) {
         console.error('Erro ao carregar produtos:', error);
         setError('Erro ao carregar produtos. Por favor, tente novamente.');
@@ -26,7 +27,7 @@ const ProductPage = () => {
 
     fetchProducts();
   }, []);
-
+  
   const handleAddToCart = async (productId) => {
     try {
       await api.post('/cart/add', {
