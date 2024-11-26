@@ -1,0 +1,121 @@
+.customer-history-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px; 
+    max-width: 90%; 
+    height: 600px; 
+    margin: 20px auto; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .customer-history-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .customer-history-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 40px; 
+    height: 40px;
+    background: url('path-to-your-icon.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .customer-history-header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+  }
+  
+  .customer-history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .customer-history-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+  
+  .customer-history-item:last-child {
+    border-bottom: none;
+  }
+  
+  .customer-avatar-placeholder {
+    width: 40px; 
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .customer-name {
+    color: #000;
+  }
+  
+  .customer-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .customer-profile h1 {
+    font-size: 1.2em; 
+    margin-bottom: 10px;
+  }
+  
+  .customer-profile p {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  
+  .customer-purchases {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .customer-purchases li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .customer-history-back-button,
+  .customer-profile button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #a5d6a7;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em; 
+  }
+  .customer-history-container {
+    width: 500px;
+    max-width: none;
+    height: auto; 
+}
+.customer-text{
+    color: #333;
+}
